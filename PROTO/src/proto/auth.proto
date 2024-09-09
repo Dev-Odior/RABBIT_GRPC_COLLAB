@@ -1,0 +1,16 @@
+syntax = 'proto3';
+
+package authPackage;
+
+service AuthentictionService {
+   rpc getRandomNumber (order) returns (value) {}
+}
+
+
+message order {
+    string message = 1;
+}
+
+message value {
+    int32 number = 1;
+}
